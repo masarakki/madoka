@@ -80,6 +80,8 @@ GEM
     factory_bot_rails (6.2.0)
       factory_bot (~> 6.2.0)
       railties (>= 5.0.0)
+    faker (2.18.0)
+      i18n (>= 1.6, < 2)
     ffi (1.15.3)
     formatador (0.3.0)
     globalid (0.5.2)
@@ -273,6 +275,7 @@ DEPENDENCIES
   bootsnap (>= 1.4.4)
   byebug
   factory_bot_rails
+  faker
   guard
   guard-bundler
   guard-rspec
