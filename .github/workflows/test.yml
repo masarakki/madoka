@@ -1,0 +1,17 @@
+name: test
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - "**"
+jobs:
+  ruby:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: ruby/setup-ruby@master
+      - uses: ./.github/actions/bundler
+      - run: bundle exec ruby -e 'puts 1'

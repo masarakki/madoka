@@ -1,0 +1,9 @@
+name: setup bundler
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      run: |
+        bundle config set path ./vendor/bundle
+    - shell: bash
+      run: bundle install -j 4
