@@ -15,6 +15,9 @@ group :development, :test do
 end
 
 group :development do
+  gem 'guard', require: false
+  gem 'guard-bundler', require: false
+  gem 'guard-rubocop', require: false
   gem 'listen', '~> 3.3'
   gem 'rack-mini-profiler', '~> 2.0'
   gem 'rubocop', require: false
