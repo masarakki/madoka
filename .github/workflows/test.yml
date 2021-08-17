@@ -8,10 +8,10 @@ on:
     branches:
       - "**"
 jobs:
-  ruby:
+  rubocop:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
       - uses: ruby/setup-ruby@master
       - uses: ./.github/actions/bundler
-      - run: bundle exec ruby -e 'puts 1'
+      - run: bundle exec rubocop
