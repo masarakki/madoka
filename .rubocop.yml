@@ -1,14 +1,11 @@
 require:
   - rubocop-rails
+  - rubocop-rspec
 AllCops:
   NewCops: enable
   Exclude:
-    - .git/**/*
     - bin/**/*
-    - log/**/*
     - node_modules/**/*
-    - public/**/*
-    - tmp/**/*
     - vendor/**/*
 Style/Documentation:
   Enabled: false
